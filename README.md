@@ -43,6 +43,9 @@ foundation-todo-app/
 ├── style.css
 ├── script.js
 └── README.md
+```
+
+---
 
 ## 動作の仕組み
 
