@@ -1,70 +1,50 @@
-# Foundation Todo App
+## 機能要件
 
-## 1. Project Purpose
-This project is created to learn the fundamentals of JavaScript and web development.
+本アプリケーションは、以下の機能を提供する。
 
-The goal is to understand:
+### 1. タスクの追加機能
+- ユーザーは入力欄にタスク内容を入力できる
+- 「Add」ボタンをクリック、またはEnterキー押下でタスクを追加できる
+- 入力が空の場合はタスクを追加しない（バリデーション）
 
-- DOM manipulation
-- Event handling
-- Data storage (localStorage)
-- Basic UI development
+### 2. タスクの表示機能
+- 追加されたタスクはリスト形式で表示される
+- 新しいタスクはリストの末尾に追加される
 
----
+### 3. タスクの削除機能
+- 各タスクに削除ボタンを表示する
+- ユーザーは削除ボタンをクリックすることでタスクを削除できる
 
-## 2. Target Users
-
-Beginner developers learning JavaScript.
-
----
-
-## 3. Core Features
-
-### Task Management
-Users can:
-
-- Add a task
-- View task list
-- Mark tasks as completed
-- Delete tasks
+### 4. 入力制御（バリデーション）
+- 空文字の入力は無効とする
+- 無効な入力の場合は処理を中断する
 
 ---
 
-## 4. Functional Requirements
+## 非機能要件
 
-### Add Task
-User can enter a task and press the "Add" button.
+本アプリケーションは、以下の非機能要件を満たす。
 
-### Display Task
-Added tasks appear in the task list.
+### 1. ユーザビリティ
+- シンプルで直感的に操作できるUIとする
+- 入力・追加・削除の操作が容易であること
 
-### Complete Task
-User can mark a task as completed.
+### 2. パフォーマンス
+- タスクの追加・削除が即時に画面へ反映されること
 
-### Delete Task
-User can remove a task.
+### 3. 互換性
+- モダンブラウザ（Chrome, Edge, Safari等）で動作すること
 
----
-
-## 5. Data Storage
-
-Tasks are stored using **localStorage** so that they remain after refreshing the page.
+### 4. 保守性
+- HTML、CSS、JavaScriptの役割を分離し、可読性の高いコード構造とする
 
 ---
 
-## 6. Technology Stack
+## 今後の拡張要件（任意）
 
-- HTML
-- CSS
-- JavaScript (Vanilla JS)
+今後の拡張として以下を検討する：
 
----
-
-## 7. Future Improvements
-
-Possible future features:
-
-- Edit task
-- Task priority
-- Due date
-- Filter tasks (completed / incomplete)
+- タスクの完了状態の管理
+- localStorageによるデータ永続化
+- タスク編集機能
+- フィルタリング機能（完了／未完了）
